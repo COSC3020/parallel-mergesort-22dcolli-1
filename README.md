@@ -23,3 +23,7 @@ I did not complete this excersise last semester, so I am attempting this complet
 
 What is the span of the parallel program, in terms of worst-case $\Theta$? Hint:
 It may help to consider the DAG of the parallel program.
+
+## Answer:
+
+This may be wrong, but this is the only logical path my mind can come up with. So the work being done in this algorithm comes mainly from the recursive splitting into groups in order to merge, and from the merging itself. The recursive splitting would have $\Theta(logn)$ levels, and the merging would be dominated by $n$ for the largest sub grouping of the array. So when you combine these two you would have a span of $\Theta(nlogn)$.
